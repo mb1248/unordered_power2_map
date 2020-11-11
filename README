@@ -1,0 +1,8 @@
+The unordered_map from the GNU Compiler Collection (GCC) use prime numbers for the buckets and therefore a division to
+determine the bucket.
+While the internal header files provides structs using power 2 buckets, that can distinguish the buckets by a simple
+mask operation.
+
+This test changes the typedefs __u2map_hashtable
+
+Original code from https://github.com/gcc-mirror/gcc/libstdc++-v3/include/bits/unordered_map.h
